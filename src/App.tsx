@@ -1,26 +1,37 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
+import Forms from './pages/Forms';
+import Charts from './pages/Charts';
+import Tables from './pages/Tables';
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <nav style={{background:"black", marginTop:"-1.3%"}}>
+        <ul style={{display:"flex",listStyle:"none"}}>
+          <li style={{margin:"1rem"}}>
+            <Link to="/">Forms</Link>
+          </li>
+          <li style={{margin:"1rem"}}>
+            <Link to="/charts">Charts</Link>
+          </li>
+          <li style={{margin:"1rem"}}>
+            <Link to="/tables">Tables</Link>
+          </li>
+          <li style={{margin:"1rem"}}>
+            <a href="#cards">Cards</a>
+          </li>
+        </ul>
+      </nav>
+
+      <Routes>
+        <Route path="/" element={<Forms />} />
+        <Route path="/charts" element={<Charts />} />
+        <Route path="/tables" element={<Tables />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;
