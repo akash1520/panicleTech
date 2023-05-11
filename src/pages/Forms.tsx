@@ -14,7 +14,6 @@ import {
 import { addUser } from '../reducers';
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from '../reducers';
-import ProfileCard from './Card';
 
 interface FormValues {
   first_name: string;
@@ -194,17 +193,6 @@ const Forms = () => {
           )}
         </Formik>
       </Box>
-      {
-        <Grid id="cards" container spacing={4} sx={{ px: "3rem" }}>
-          {user.map((u) => (
-            <Grid item xs={6} md={4} key={u.id}>
-              <ProfileCard {...u} />
-            </Grid>
-
-          ))}
-        </Grid>
-      }
-
     </>
   );
 };

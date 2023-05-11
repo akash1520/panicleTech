@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 import Forms from './pages/Forms';
 import Charts from './pages/Charts';
 import Tables from './pages/Tables';
+import Cards from './pages/Cards';
 
 
 const App = () => {
@@ -20,7 +21,7 @@ const App = () => {
             <Link to="/tables">Tables</Link>
           </li>
           <li style={{margin:"1rem"}}>
-            <a href="#cards">Cards</a>
+            <Link to="/cards">Cards</Link>
           </li>
         </ul>
       </nav>
@@ -29,6 +30,7 @@ const App = () => {
         <Route path="/" element={<Forms />} />
         <Route path="/charts" element={<Charts />} />
         <Route path="/tables" element={<Tables />} />
+        <Route path="/cards" element={<Cards />} />
       </Routes>
     </Router>
   );
