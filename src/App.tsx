@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
-import Form from './pages/Form';
+import Form from './pages/FormPage';
 import Charts from './pages/Charts';
 import Tables from './pages/Tables';
 import Cards from './pages/Cards';

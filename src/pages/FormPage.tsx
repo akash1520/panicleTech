@@ -50,7 +50,7 @@ function getBirthDateFromAge(age: number): string {
 }
 
 
-const Form = () => {
+const FormPage = () => {
 
   const user = useSelector((state: RootState) => state.users);
   const dispatch = useDispatch();
@@ -197,4 +197,4 @@ const Form = () => {
   );
 };
 
-export default Form;
+export default FormPage;
