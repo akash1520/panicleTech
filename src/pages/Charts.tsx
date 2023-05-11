@@ -132,11 +132,11 @@ const Charts = () => {
   
 
   return (<>
-  <Box sx={{mx:"5rem",textAlign:"center",backgroundColor:"whitesmoke",my:"5rem",padding:"2rem"}}>
-    <Typography variant='h3'>User vs Age</Typography>
+  <Box sx={{textAlign:"center",backgroundColor:"whitesmoke",my:"5rem",padding:"2rem"}}>
+    <Typography variant='h3'>User (Only who're above 30) vs Age</Typography>
     <Bar data={chartData} />
   </Box>
-  <Box sx={{mx:"5rem",textAlign:"center",backgroundColor:"whitesmoke",my:"5rem",padding:"2rem"}}>
+  <Box sx={{textAlign:"center",backgroundColor:"whitesmoke",my:"5rem",padding:"2rem"}}>
     <br/>
     <Typography variant='h3'>Country vs Users</Typography>
     <Bar data={anotherChartData} options={{
