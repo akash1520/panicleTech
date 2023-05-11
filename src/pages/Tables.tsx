@@ -7,7 +7,7 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import { User } from "../types"
-import { Button } from '@mui/material';
+import { Button,Grid } from '@mui/material';
 import { Box } from '@mui/material';
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState, editUser } from '../reducers';
@@ -65,10 +65,10 @@ export default function Tables() {
 
   return (
     <Box>
-      <Box sx={{ textAlign: "center" }}>
-        <Button onClick={deleteAll}>Delete All</Button>
-        <Button onClick={defaultData}>Add Default Data</Button>
-      </Box>
+      <Grid container sx={{ textAlign: "center",m:"0.5rem" }}>
+        <Grid item xs={6} md={6}><Button onClick={deleteAll} variant='outlined'>Delete All</Button></Grid>
+        <Grid item xs={6} md={6}><Button onClick={defaultData} variant='outlined'>Add Default Data</Button></Grid>
+      </Grid>
       <TableContainer component={Paper}>
         <Table sx={{ minWidth: 650 }} aria-label="simple table">
           <TableHead>
