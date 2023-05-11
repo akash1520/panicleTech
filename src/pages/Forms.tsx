@@ -81,10 +81,10 @@ const Forms = () => {
   return (
     <>
       <Box sx={{
+        display:"flex",
         mx: 'auto',
         my: '3rem',
-        width: '80vw',
-        textAlign: "center"
+        width: '80vw'
       }}>
         <Formik
           initialValues={initialValues}
@@ -181,7 +181,7 @@ const Forms = () => {
                 )}
               </Field>
               <Button
-                sx={{ my: "2rem" }}
+                sx={{ my: "2rem"}}
                 variant="outlined"
                 color="primary"
                 type="submit"

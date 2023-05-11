@@ -9,8 +9,8 @@ import Cards from './pages/Cards';
 const App = () => {
   return (
     <Router>
-      <nav style={{background:"black", marginTop:"-1.3%"}}>
-        <ul style={{display:"flex",listStyle:"none"}}>
+      <nav style={{background:"black"}}>
+        <ul style={{display:"flex",listStyle:"none",margin:0}}>
           <li style={{margin:"1rem"}}>
             <Link to="/">Forms</Link>
           </li>
