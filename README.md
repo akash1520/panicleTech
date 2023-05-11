@@ -1,46 +1,47 @@
-# Getting Started with Create React App
+#instruction
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Can test the application by running the same application on localhost by ```npm start``` command
 
-## Available Scripts
+Let's go through the step-by-step working of the application based on the provided requirements.
 
-In the project directory, you can run:
+#Step 1: Setting up the Project
 
-### `npm start`
+Create a new React project using a tool like Create React App.
+Install the necessary dependencies such as Chart.js, react-table, Formik, and Redux.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+#Step 2: Data Handling
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Import the provided data into the application.
+Store the data globally using Redux, creating a user reducer to manage the user data.
+Create Redux actions and reducers to add, edit, and view user data.
 
-### `npm test`
+#Step 3: Chart Page
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Create a Chart page component that will render the charts.
+Use a popular charting library like Chart.js to create the required charts.
+Filter the user data based on age and gender to generate the first chart.
+Calculate the count of users for each country to generate the second chart.
 
-### `npm run build`
+#Step 4: Tables Page
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Create a Tables page component that will render the tables.
+Use a popular table library like react-table or Material-UI Table to create the tables.
+Fetch the user data from the Redux store and display it in the table.
+Add an action column with edit and view buttons.
+Handle the click event of the edit button to open a modal with the pre-filled user data.
+Handle the click event of the view button to route the user to a new page displaying the user's details.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#Step 5: Forms Page
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Create a Forms page component that will render the form.
+Use a popular form library like Formik or react-hook-form to create the form.
+Add fields for the user's name, age, gender, and email address.
+Implement validation to ensure all fields are filled out before submission.
+Disable the submit button until all fields are filled.
+Handle form submission and dispatch the addUser action to add the data to the Redux store.
 
-### `npm run eject`
+#Step 6: Rendering Stored Data
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Create a Card component that will render the stored data.
+Fetch the user data from the Redux store and display it in the Card component.
+Style the Card component to present the user's details in an appealing way.
