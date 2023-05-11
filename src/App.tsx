@@ -9,19 +9,19 @@ import Cards from './pages/Cards';
 const App = () => {
   return (
     <Router>
-      <nav style={{background:"black"}}>
-        <ul style={{display:"flex",listStyle:"none",margin:0}}>
-          <li style={{margin:"1rem"}}>
-            <Link to="/">Form</Link>
+      <nav style={{ background: "black" }}>
+        <ul style={{ display: "flex", listStyle: "none", margin: 0 }}>
+          <li style={{ margin: "1rem", color: "whitesmoke" }}>
+            <Link style={{ color: "whitesmoke", textDecoration: "none" }} to="/">Form</Link>
           </li>
-          <li style={{margin:"1rem"}}>
-            <Link to="/charts">Charts</Link>
+          <li style={{ margin: "1rem" }}>
+            <Link style={{ color: "whitesmoke", textDecoration: "none" }} to="/charts">Charts</Link>
           </li>
-          <li style={{margin:"1rem"}}>
-            <Link to="/tables">Tables</Link>
+          <li style={{ margin: "1rem" }}>
+            <Link style={{ color: "whitesmoke", textDecoration: "none" }} to="/tables">Tables</Link>
           </li>
-          <li style={{margin:"1rem"}}>
-            <Link to="/cards">Cards</Link>
+          <li style={{ margin: "1rem" }}>
+            <Link style={{ color: "whitesmoke", textDecoration: "none" }} to="/cards">Cards</Link>
           </li>
         </ul>
       </nav>
